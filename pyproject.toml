@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "filecrypt-argon2id"
+version = "1.0.0"
+description = "File encryption with Argon2id + ChaCha20-Poly1305"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "GNU Affero General Public License v3 or later" }
+dependencies = ["argon2-cffi>=21.3.0", "cryptography>=41.0.0"]
+
+[project.scripts]
+filecrypt = "filecrypt:main"
+
+[project.urls]
+Homepage = "https://github.com/msv1d/filecrypt"
+
+[tool.setuptools]
+py-modules = ["filecrypt"]

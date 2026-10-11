@@ -18,13 +18,19 @@ License: **GNU AGPL v3 or later** — see `LICENSE`.
 
 ## Install
 
-Python 3.8+ required.
-
 ```bash
-pip install -r requirements.txt
+pip install filecrypt-argon2id
+filecrypt --help
 ```
 
-Dependencies: `argon2-cffi`, `cryptography`. No other dependencies.
+Or from source:
+
+```bash
+git clone https://github.com/msv1d/filecrypt.git
+cd filecrypt
+pip install -r requirements.txt
+python filecrypt.py
+```
 
 ## Usage
 
