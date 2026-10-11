@@ -27,7 +27,7 @@ from argon2.low_level import Type, hash_secret_raw
 from cryptography.exceptions import InvalidTag
 from cryptography.hazmat.primitives.ciphers.aead import ChaCha20Poly1305
 
-__version__ = "1.0"
+__version__ = "1.0.0"
 
 # Constants
 MAGIC = b"msv1dArgon2idObfuscation"
