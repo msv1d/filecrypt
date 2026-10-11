@@ -6,8 +6,8 @@ Usage:
     python filecrypt.py              # interactive drag & drop mode
 
 File format (big-endian):
-    magic 25B | version 1B | time 1B | memory 4B | parallelism 1B |
-    chunk size 4B | salt 16B | nonce prefix 7B (= 59B header) |
+    magic 24B | version 1B | time 1B | memory 4B | parallelism 1B |
+    chunk size 4B | salt 16B | nonce prefix 7B (= 58B header) |
     chunks: ciphertext + 16B tag. Header is AAD for every chunk.
 
 License: GNU AGPL v3 or later, see LICENSE.
