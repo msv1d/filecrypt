@@ -62,7 +62,7 @@ Exit code: `0` on success, `1` if any file failed.
 | KDF | Argon2id, 3 iterations, 64 MiB, 4 lanes |
 | Cipher | ChaCha20-Poly1305, 256-bit key |
 | Chunk | 8 MiB plaintext + 16-byte tag |
-| Header | 59 bytes, used as AAD for every chunk |
+| Header | 58 bytes, used as AAD for every chunk |
 | Nonce | prefix(7) + counter(4) + last(1), STREAM construction |
 
 Header stores Argon2 parameters, so they can be raised later. Untrusted headers are capped: time <= 10, memory <= 256 MiB, parallelism <= 8, chunk <= 64 MiB. See the docstring in `filecrypt.py`.
