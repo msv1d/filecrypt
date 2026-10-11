@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "File encryption with Argon2id + ChaCha20-Poly1305"
 readme = "README.md"
 requires-python = ">=3.8"
-license = { text = "GNU Affero General Public License v3 or later" }
+license = "AGPL-3.0-or-later"
 dependencies = ["argon2-cffi>=21.3.0", "cryptography>=41.0.0"]
 
 [project.scripts]
